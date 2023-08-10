@@ -120,3 +120,19 @@ const numerosMap = numeros.map( (numero) => {
 
 console.log(numerosMap);
 console.log(numeros);
+
+// reduce()
+
+const soma = numeros.reduce(function(acumulador, numero) {
+    return acumulador + numero;
+}, 0);
+  
+console.log(soma);
+
+// filter()
+
+const numerosPares = numeros.filter(function(numero) {
+    return numero % 2 === 0;
+});
+  
+console.log(numerosPares);
